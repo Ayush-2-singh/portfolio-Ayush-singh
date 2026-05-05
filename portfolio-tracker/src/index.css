@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0d0704;
+    background-image:
+      radial-gradient(ellipse at top, #3d1a0a 0%, #1e0d05 40%, #0d0704 100%);
+    color: #e8c99a;
+    font-family: 'Crimson Text', Georgia, serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+}
+
+@layer utilities {
+  .bg-mesh {
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(192, 80, 16, 0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(96, 28, 8, 0.15) 0%, transparent 50%);
+  }
+
+  .font-western {
+    font-family: 'Cinzel Decorative', serif;
+  }
+
+  .font-body {
+    font-family: 'Crimson Text', Georgia, serif;
+  }
+
+  .font-typewriter {
+    font-family: 'Special Elite', Georgia, serif;
+  }
+
+  .text-gold {
+    color: #e8a020;
+  }
+
+  .text-blood {
+    color: #c0392b;
+  }
+
+  .text-dust {
+    color: #d4a96a;
+  }
+
+  .glow-amber {
+    text-shadow: 0 0 20px rgba(232, 160, 32, 0.6), 0 0 40px rgba(232, 160, 32, 0.3);
+  }
+
+  .glow-blood {
+    text-shadow: 0 0 20px rgba(192, 57, 43, 0.6), 0 0 40px rgba(192, 57, 43, 0.3);
+  }
+
+  .wanted-border {
+    border: 2px solid #a0522d;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.5), 0 0 20px rgba(160, 82, 45, 0.2);
+    position: relative;
+  }
+
+  .wanted-border::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(160, 82, 45, 0.3);
+    pointer-events: none;
+  }
+
+  .parchment {
+    background: linear-gradient(135deg, #2a1a0a 0%, #1e0f05 50%, #2a1a0a 100%);
+    border: 1px solid #5c2a12;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
+  }
+
+  .sundown-text {
+    background: linear-gradient(135deg, #e8a020 0%, #c04010 50%, #e8a020 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .divider-west {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a0522d, #e8a020, #a0522d, transparent);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0d0704; }
+  ::-webkit-scrollbar-thumb { background: #5c2a12; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #a0522d; }
+}
