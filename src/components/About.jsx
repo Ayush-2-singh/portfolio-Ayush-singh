@@ -16,8 +16,8 @@ const About = () => {
   const social = [
     { name: 'LinkedIn', icon: FaLinkedin, url: 'https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEuOFvrPJB8zgAAAZ33Xv34UQmA09fGKdLfwzGi53wWpu4xWUiWxUefxr9A3MAoObrm9sdVDmD2AThWWB7zYe_ALxLVbSwhKu3T-u8blqR0sIse2c_6EsJm38Jyuino5i41OA0=&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fayush-singh-3a2b85314%3Futm_source%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dmember_android', color: '#0077B5' },
     { name: 'GitHub', icon: FaGithub, url: 'https://github.com/ayush-2-singh', color: '#d4c5a9' },
-    { name: 'Resume', icon: FaDownload, url: '/resume.pdf', color: '#e8a020' },
-    { name: 'Email', icon: FaEnvelope, url: 'ayushsinghtmd@gmail.com', color: '#c0392b' },
+    { name: 'Resume', icon: FaDownload, url: 'https://docs.google.com/document/d/17TY8fPIW8vcFfnjwfT5SuwIOuDCgQEa4/edit', color: '#e8a020' },
+    { name: 'Email', icon: FaEnvelope, url: 'mailto:ayushsinghtmd@gmail.com', color: '#c0392b' },
   ]
 
   return (
@@ -41,10 +41,7 @@ const About = () => {
           {/* Avatar */}
           <div className="lg:w-1/3 flex justify-center">
             <div className="wanted-border p-1 rounded w-60 h-60">
-              <div className="w-full h-full bg-gradient-to-b from-saddle-800 to-darkwood flex items-center justify-center text-7xl rounded">
-                🤠
-              </div>
-            </div>
+             <img src="/photo.png" alt="Ayush Singh" className="w-full h-full object-cover object-top rounded" /> </div>
           </div>
 
           {/* Info */}

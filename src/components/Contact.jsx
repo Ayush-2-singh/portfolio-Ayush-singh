@@ -66,9 +66,9 @@ const Contact = () => {
             <h3 className="font-display text-xl text-ember mb-6">Find Me on the Trail</h3>
             <div className="space-y-4">
               {[
-                { icon: FaEnvelope, label: 'alex@rivera.dev', href: 'mailto:alex@rivera.dev', color: '#c0392b' },
-                { icon: FaLinkedin, label: 'LinkedIn Profile', href: 'https://linkedin.com/in/alexrivera', color: '#0077B5' },
-                { icon: FaGithub, label: 'GitHub Repos', href: 'https://github.com/alexrivera', color: '#d4c5a9' },
+                { icon: FaEnvelope, label: 'ayushsinghtmd@gmail.com', href: 'mailto:ayushsinghtmd@gmail.com', color: '#c0392b' },
+                { icon: FaLinkedin, label: 'LinkedIn Profile', href:'https://linkedin.com/in/ayush-singh-3a2b85314', color: '#0077B5' },
+                { icon: FaGithub, label: 'GitHub Repos', href: 'https://github.com/ayush-2-singh', color: '#d4c5a9' },
               ].map(({ icon: Icon, label, href, color }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-4 p-3 rounded bg-darkwood/50 border border-saddle-800 hover:border-saddle-500/60 transition-colors group"
@@ -79,7 +79,7 @@ const Contact = () => {
               ))}
             </div>
             <div className="mt-8 pt-4 border-t border-saddle-800/60">
-              <p className="font-mono text-dust-600 text-xs uppercase tracking-widest">📍 San Francisco, CA — Frontier Territory</p>
+              <p className="font-mono text-dust-600 text-xs uppercase tracking-widest">📍 VARANASI, UP — FRONTIER TERRITORY</p>
             </div>
           </motion.div>
         </div>

@@ -1,0 +1,14 @@
+# Query: resume
+# ContextLines: 1
+
+4 results - 2 files
+
+portfolio-tracker/src/components/About.jsx:
+  6    const skills = [{name:'React',icon:SiReact,color:'#61DAFB'},{name:'Node.js',icon:SiNodedotjs,color:'#339933'},{name:'Python',icon:SiPython,color:'#3776AB'},{name:'Tailwind',icon:SiTailwindcss,color:'#06B6D4'},{name:'Supabase',icon:SiSupabase,color:'#3ECF8E'},{name:'Git',icon:SiGit,color:'#F05032'}]
+  7:   const social = [{name:'LinkedIn',icon:FaLinkedin,url:'https://linkedin.com/in/alexrivera',color:'#0077B5'},{name:'GitHub',icon:FaGithub,url:'https://github.com/alexrivera',color:'#fff'},{name:'Resume',icon:FaDownload,url:'/resume.pdf',color:'#10B981'},{name:'Email',icon:FaEnvelope,url:'mailto:alex@rivera.dev',color:'#EF4444'}]
+  8    return (
+
+src/components/About.jsx:
+  18      { name: 'GitHub', icon: FaGithub, url: 'https://github.com/ayush-2-singh', color: '#d4c5a9' },
+  19:     { name: 'Resume', icon: FaDownload, url: 'https://docs.google.com/document/d/17TY8fPIW8vcFfnjwfT5SuwIOuDCgQEa4/edit', color: '#e8a020' },
+  20      { name: 'Email', icon: FaEnvelope, url: 'ayushsinghtmd@gmail.com', color: '#c0392b' },
